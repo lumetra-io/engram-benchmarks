@@ -1,0 +1,25 @@
+{
+  "per_run_pass_counts": {
+    "0": 458,
+    "1": 448,
+    "2": 449,
+    "3": 450
+  },
+  "mean": 451.25,
+  "std": 3.960744879438715,
+  "min": 448,
+  "max": 458,
+  "fully_stable_pass": 448,
+  "fully_stable_fail": 50,
+  "flippable_count": 2,
+  "flippable_tasks": [
+    {
+      "task_id": "1c0ddc50",
+      "n_pass_in_regrade": 2
+    },
+    {
+      "task_id": "gpt4_93159ced_abs",
+      "n_pass_in_regrade": 1
+    }
+  ]
+}

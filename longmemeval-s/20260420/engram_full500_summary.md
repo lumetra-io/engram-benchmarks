@@ -1,0 +1,70 @@
+# Engram LongMemEval-S 500 — v44 profile pass
+
+**Run completed:** 2026-05-04
+
+## Final score: 458/500 = 91.60%
+
+## Comparison
+
+| System | Score |
+|---|---|
+| Engram v44 (this run) | **458/500 = 91.60%** |
+| Engram v44 on 120 stratified | 113/120 = 94.17% |
+
+## Per-category
+
+| Category | Score | % |
+|---|---|---|
+| multi-session | 111/133 | 83.5% |
+| temporal-reasoning | 124/133 | 93.2% |
+| knowledge-update | 74/78 | 94.9% |
+| single-session-user | 69/70 | 98.6% |
+| single-session-assistant | 56/56 | 100.0% |
+| single-session-preference | 24/30 | 80.0% |
+
+## Failures: 42
+
+| qid | category | question | gold | prediction (last 200 chars) |
+|---|---|---|---|---|
+| 07741c45 | knowledge-update | Where do I currently keep my old sneakers? | in a shoe rack in my closet | ...Under your bed. (You’d planned to move them to a shoe rack in your closet, but that wasn’t confirmed yet.) |
+| 08f4fc43 | temporal-reasoning | How many days had passed between the Sunday mass at St. Mary's Church and the Ash Wednesday service  | 30 days. 31 days (including the last day) is also acceptable. | ...\| \| 2 \| Ash Wednesday service at the cathedral — 2023-02-22 \| [fact] [2023-02-20]; raw aggregate (attended 2023-02-22) \| yes — attended; latest-dated fact used \|  CANONICAL COUNT: 51  Answer: 51 days. |
+| 09ba9854 | multi-session | How much will I save by taking the train from the airport to my hotel instead of a taxi? | $50 | ...0–¥20,000 (≈$140–$180)  You’d save about ¥12,000–¥17,000 (roughly $110–$150) one way by taking the train. If you use the Keisei Skyliner + subway (~¥2,700–¥3,000), savings are similar or a bit higher. |
+| 09ba9854_abs | multi-session | How much will I save by taking the bus from the airport to my hotel instead of a taxi? | The information provided is not enough. You did not mention how much will the bus take. | ...ku prices we discussed: - Airport Limousine Bus: ~¥3,200 (~$29) - Taxi: ~¥20,000–¥30,000 (~$180–$270)  You’d save about ¥16,800–¥26,800 (roughly $151–$241) one way by taking the bus instead of a taxi. |
+| 0a34ad58 | single-session-preference | I’m a bit anxious about getting around Tokyo. Do you have any helpful tips? | The user would prefer responses that utilize their existing resources, such as their Suica card and  | ...ivity   - Ensure mobile data or download offline maps for peace of mind.  If you want, I can give you step‑by‑step routes from Shinjuku to spots on your list (like Tsukiji or Tokyo Tower) using Suica. |
+| 0a995998 | multi-session | How many items of clothing do I need to pick up or return from a store? | 3 | ...\| Green sweater (lent to sister) \| profile.owned_items \| no — not a store pickup/return \|  CANONICAL COUNT: 2  Answer: 2 items — your exchanged Zara boots and your navy blue blazer at the dry cleaner. |
+| 1a8a66a6 | multi-session | How many magazine subscriptions do I currently have? | 2 | ...ional Geographic \| profile.events: “Purchased an issue (2023-03-15)” \| no — single-issue purchase, not a subscription \|  CANONICAL COUNT: 1  You currently have 1 magazine subscription: The New Yorker. |
+| 1d4e3b97 | single-session-preference | I noticed my bike seems to be performing even better during my Sunday group rides. Could there be a  | The user would prefer responses that reference specific details from their previous interactions, su | ...italize safely: hold a steady line, avoid overlapping wheels, communicate, and rotate smoothly in the paceline. Keep your refreshed drivetrain clean/lubed and tires properly inflated before each ride. |
+| 35a27287 | single-session-preference | Can you recommend some interesting cultural events happening around me this weekend? | The user would prefer responses that suggest cultural events where they can practice their language  | ...y]”   - “Vietnamese street food pop-up [your city]” (since you’re into VN cuisine)  Share your city and I’ll curate 6–8 specific picks for this weekend (with times, neighborhoods, and any RSVP links). |
+| 370a8ff4 | temporal-reasoning | How many weeks had passed since I recovered from the flu when I went on my 10th jog outdoors? | 15 | ...About 11 weeks and 4 days (81 days) — from Jan 19, 2023 (recovered) to Apr 10, 2023 (10th jog). |
+| 37f165cf | multi-session | What was the page count of the two novels I finished in January and March? | 856 | ...341 pages (January) and 416 pages (March). |
+| 3a704032 | multi-session | How many plants did I acquire in the last month? | 3 | ... last month relative to 2023-05-24” → April 2023) \| no — April date not clearly within last ~35 days window \|  CANONICAL COUNT: 2  Answer: 2 (the peace lily and the succulent you bought around May 6). |
+| 46a3abf7 | multi-session | How many tanks do I currently have, including the one I set up for my friend's kid? | 3 | ...allon tank (old betta tank) \| profile.owned_items \| no — marked previous \|  CANONICAL COUNT: 2  You currently have 2 tanks: your 20-gallon “Amazonia” and the 1-gallon you set up for your friend’s kid. |
+| 4f54b7c9 | multi-session | How many antique items did I inherit or acquire from my family members? | 5 | ...ntique \|  CANONICAL COUNT: 4  Answer: 4. These are the tea set, typewriter, music box, and depression‑era glassware. If the necklace is confirmed to be 100+ years old, that would raise the count to 5. |
+| 51c32626 | multi-session | When did I submit my research paper on sentiment analysis? | February 1st | ...You didn’t give an exact date. In your May 22, 2023 message, you said you had already submitted a sentiment analysis paper (to ACL), but no specific submission date was provided. |
+| 66f24dbb | single-session-user | What did I buy for my sister's birthday gift? | a yellow dress | ...A yellow dress and a matching pair of earrings. |
+| 69fee5aa | knowledge-update | How many pre-1920 American coins do I have in my collection? | 38 | ...le lists the collection size as 37 \| \| 2 \| “I have a total of 37 coins…” \| memory (2023-05-27) \| yes — user-stated count \|  CANONICAL COUNT: 37  You have 37 pre-1920 American coins in your collection. |
+| 6d550036 | multi-session | How many projects have I led or am currently leading? | 2 | ...ONICAL COUNT: 3  Answer: 3. Based on your profile, you’re currently leading the June product feature and the solo data mining project, and you previously led the marketing research data analysis team. |
+| 7024f17c | multi-session | How many hours of jogging and yoga did I do last week? | 0.5 hours | ... logged as attended \|  CANONICAL COUNT: Jogging: 0 hours; Yoga: 0 hours; Total: 0 hours  Answer: 0 hours of jogging and 0 hours of yoga last week (no sessions recorded in Mon May 22–Sun May 28, 2023). |
+| 7405e8b1 | multi-session | Did I receive a higher percentage discount on my first order from HelloFresh, compared to my first U | Yes. | ...er.  If your first UberEats order was the one with 20% off, then yes—HelloFresh was a higher discount (40% vs 20%). If not, tell me what discount you got on your first UberEats order and I’ll compare. |
+| 830ce83f | knowledge-update | Where did Rachel move to after her recent relocation? | the suburbs | ...Chicago, Illinois. |
+| 9ee3ecd6 | multi-session | How many points do I need to earn to redeem a free skincare product at Sephora? | 100 | ...300 points. |
+| a2f3aa27 | knowledge-update | How many followers do I have on Instagram now? | 1300 | ...provided \|  CANONICAL COUNT: 1,250 (latest confirmed)  Last you confirmed, you had 1,250 followers (May 25, 2023). You mentioned being close to 1,300 afterward but didn’t give an exact updated number. |
+| a96c20ee_abs | multi-session | At which university did I present a poster for my undergrad course research project? | The information provided is not enough. You did not mention presenting a poster for your undergrad c | ...Harvard University. |
+| b6025781 | single-session-preference | I'm planning my meal prep next week, any suggestions for new recipes? | The user would prefer responses that suggest healthy meal prep recipes, especially those that incorp | ...potatoes, quinoa/rice, cilantro, cabbage, lentils, salmon or chicken, Greek yogurt, harissa.  Want full step‑by‑step for two of these? Tell me which and I’ll write tight, 30‑minute meal‑prep versions. |
+| ba358f49 | multi-session | How many years will I be when my friend Rachel gets married? | 33 | ... So you’ll be either your current age (if the wedding is before your 2023 birthday) or one year older (if it’s after). Share your current age and the wedding month, and I’ll give you the exact number. |
+| bf659f65 | multi-session | How many music albums or EPs have I purchased or downloaded? | 3 | ....owned_items \| no — owned/signed, purchase/download not stated \|  CANONICAL COUNT: 2  Answer: 2. You downloaded Billie Eilish’s “Happier Than Ever” and bought The Whiskey Wanderers’ EP “Midnight Sky.” |
+| d24813b1 | single-session-preference | I'm thinking of inviting my colleagues over for a small gathering. Any tips on what to bake? | The user would prefer baking suggestions that take into account their previous success with the lemo | ...r dessert, set it to “warm” and pre-portion with a ladle and cups.  Want a specific recipe (e.g., lemon–lavender pound cake, chewy cookies, or the slow cooker lava cake)? I’ll tailor it to your taste. |
+| d6233ab6 | single-session-preference | I've been feeling nostalgic lately. Do you think it would be a good idea to attend my high school re | The user would prefer responses that draw upon their personal experiences and memories, specifically | ...ke your French‑inspired dinner). - If the big event feels overwhelming, host a smaller meetup with a few favorites instead.  Want help drafting a quick message to a couple of classmates to coordinate? |
+| d851d5ba | multi-session | How much money did I raise for charity in total? | $3,750 | ...en's hospital charity bake sale ($1,000)"] \| yes \|  CANONICAL SUM: ≥ $8,750  Total raised: at least $8,750. Note: the concert is listed as “over $5,000,” so the true total is a bit higher than $8,750. |
+| e3038f8c | multi-session | How many rare items do I have in total? | 99 | ...ld, not currently owned \|  CANONICAL COUNT: 100  Answer: 100 total rare items (57 records + 12 figurines + 25 coins + 5 rare books + 1 antique vase). Excludes the Sgt. Pepper record since it was sold. |
+| eac54add | temporal-reasoning | What was the significant buisiness milestone I mentioned four weeks ago? | I signed a contract with my first client. | ...Your influencer collaboration was a big success—the influencer promoted your product to her 10,000 followers. |
+| gpt4_2ba83207 | multi-session | Which grocery store did I spend the most money at in the past month? | Thrive Market | ...Walmart — you spent about $120 there, which is more than your Publix Instacart order (~$60 + $10 delivery) and the Trader Joe’s trip (~$80 total between you and your sister). |
+| gpt4_2f8be40d | multi-session | How many weddings have I attended in this year? | I attended three weddings. The couples were Rachel and Mike, Emily and Sarah, and Jen and Tom. | ... Sister’s wedding \| profile.events \| no — date not confirmed as 2023 \|  CANONICAL COUNT: 4  Answer: 4 weddings in 2023 (Emily & Sarah; Jen & Tom; cousin Rachel in August; another cousin in September). |
+| gpt4_59149c78 | temporal-reasoning | I mentioned that I participated in an art-related event two weeks ago. Where was that event held at? | The Metropolitan Museum of Art. | ...At a local farm stay (the crafting retreat you attended mid-January). |
+| gpt4_59c863d7 | multi-session | How many model kits have I worked on or bought? | I have worked on or bought five model kits. The scales of the models are: Revell F-15 Eagle (scale n | ...iger I diorama \| stable_facts (diorama project) \| no — not explicitly a model kit purchase/worked kit \|  CANONICAL COUNT: 4  Answer: 4 total (Revell F‑15, Tamiya Spitfire, 1/72 B‑29, 1/24 ’69 Camaro). |
+| gpt4_65aabe59 | temporal-reasoning | Which device did I set up first, the smart thermostat or the mesh network system? | Smart thermostat | ...The mesh Wi‑Fi network system. You installed it first (mid‑January 2023), and set up the smart thermostat about a month before May 25 (around April). |
+| gpt4_70e84552_abs | temporal-reasoning | Which task did I complete first, fixing the fence or purchasing three cows from Peter? | The information provided is not enough. You mentioned fixing the fence but did not mention purchasin | ...e east-side fence around 2023-04-30, but no record that you purchased three cows from Peter (you were still researching breeds). If you did make that purchase, share the date and I’ll update my notes. |
+| gpt4_731e37d7 | multi-session | How much total money did I spend on attending workshops in the last four months? | $720 | ...vs 2023-02-26 \|  CANONICAL SUM: $220  Total spent in the last four months: $220 (=$200 in November + $20 in December; February workshop was free; January workshop price not provided, so not included). |
+| gpt4_7abb270c | temporal-reasoning | What is the order of the six museums I visited from earliest to latest? | Science Museum, Museum of Contemporary Art, Metropolitan Museum of Art, Museum of History, Modern Ar | ...m guided tour (2023-02-17) 5) Modern Art Museum — “The Evolution of Abstract Expressionism” tour with Dr. Patel (2023-02-20) 6) Natural History Museum — “Dinosaur Fossils” with your niece (2023-03-04) |
+| gpt4_d6585ce9 | temporal-reasoning | Who did I go with to the music event last Saturday? | my parents | ...Your sister. |
+| gpt4_f420262c | temporal-reasoning | What is the order of airlines I flew with from earliest to latest before today? | JetBlue, Delta, United, American Airlines | ...JetBlue → United → American  - JetBlue (SFO→BOS red-eye, ~Nov 17, 2022) - United (BOS→CHI, Jan 28, 2023) - American (LAX→JFK, Feb 10, 2023) |
